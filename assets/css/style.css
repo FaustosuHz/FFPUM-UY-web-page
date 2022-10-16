@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #5c9f24;
+  color: #3c4634;
   text-decoration: none;
 }
 
 a:hover {
-  color: #74c92d;
+  color: #0039eb;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5c9f24;
+  background: #0039eb;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #6fc02c;
+  background: #688ef3;
   color: #fff;
 }
 
@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   height: 80px;
+  
 }
 
 #header .logo {
@@ -143,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #5c9f24;
+  background-color: #0039eb;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -165,12 +166,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #5c9f24;
+  border: 2px solid #0039eb;
 }
 
 .navbar .getstarted:hover {
   color: #fff;
-  background: #5c9f24;
+  background: #0039eb;
 }
 
 .navbar .getstarted:hover:before, .navbar li:hover > .getstarted:before {
@@ -354,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Seccion de inicio
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
@@ -407,7 +408,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 span {
-  color: #5c9f24;
+  color: #0039eb;
 }
 
 #hero p {
@@ -480,7 +481,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #5c9f24;
+  background: #0039eb;
 }
 
 #hero .btn-get-started {
@@ -498,15 +499,22 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   text-transform: uppercase;
-  border: 2px solid #5c9f24;
-  background: #5c9f24;
+  border: 2px solid #0046ff;
+  background: #0039eb;
 }
 
 #hero .btn-get-started:hover {
-  background: #6ab82a;
-  border-color: #6ab82a;
+  background: #1e6af8;
+  border-color: #0000fa;
   color: #fff;
 }
+
+
+
+/*hasta aca modifique colores, me falta la version mobile*/
+
+
+
 
 @media (max-width: 768px) {
   #hero h2 {
@@ -545,7 +553,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5c9f24;
+  color: #2a2a2a;
 }
 
 .section-title p {
@@ -562,6 +570,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 34px;
+  margin-bottom: 100px;
 }
 
 .about .content p {
@@ -594,6 +603,11 @@ section {
   background: url("../img/about.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
+  border: solid black; 10px  ;
+  padding: 35px;
+
+
+
 }
 
 @media (max-width: 991px) {
@@ -755,19 +769,23 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# Departamentos
 --------------------------------------------------------------*/
 .why-us .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.4s;
+
+
 }
 
 .why-us .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #8ed851;
+  color: #2a2a2a;
+
+
 }
 
 .why-us .box h4 {
@@ -775,24 +793,48 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #2a2a2a;
+  color: #0039eb;
 }
 
 .why-us .box p {
   color: #aaaaaa;
   font-size: 15px;
-  margin: 0;
-  padding: 0;
+  margin: 50;
+  padding: 50;
 }
 
 .why-us .box:hover {
-  background: #5c9f24;
+  
+  background: #0039eb;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  background-image: url("../img/departamentos/1.png"); background-repeat: no-repeat;
+  bottom: 499px;
+  right: 500px;
 }
 
-.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+
+
+
+.why-us .box:hover h4, .why-us .box:hover p {
   color: #fff;
+}
+
+.why-us .box:hover span {
+  color: yellow;
+}
+
+
+/*Background personalizado en hover-*/
+
+.why-us .swa:hover {    background-image: url("../img/departamentos/swa.png"); background-repeat: no-repeat;
+                 bottom: 499px;
+                  right: 500px;       
+
+
+
+
+
 }
 
 /*--------------------------------------------------------------
@@ -985,6 +1027,7 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+
 .team {
   background: #fff;
   padding: 60px 0;
@@ -1567,7 +1610,8 @@ section {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom:-20px;
 }
 
 #footer .credits {
